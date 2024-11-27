@@ -65,3 +65,9 @@ const calculate = () => {
   document.querySelector("#variance").textContent = variance;
   document.querySelector("#standardDeviation").textContent = standardDeviation;
 }
+
+onclick = e => {
+  if (!e.target.closest('form')) {
+    document.documentElement.classList.toggle('invert');
+  }
+}
